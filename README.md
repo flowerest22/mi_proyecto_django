@@ -59,6 +59,8 @@ python manage.py createsuperuser
 python manage.py runserver
 Acceder desde: http://localhost:8000
 
+---
+
 📁 Estructura general del proyecto
 books/ – App principal de reseñas
 
@@ -74,6 +76,7 @@ templates/ – Templates HTML con herencia
 
 db.sqlite3 – NO incluida en el repositorio
 
+---
 🔒 Importante
 Este repositorio no incluye:
 
@@ -82,7 +85,7 @@ db.sqlite3 (por seguridad y limpieza del repositorio)
 Carpeta media/ (por tamaño)
 
 Datos precargados (la app se construye con migraciones)
-
+---
 🧾 Requisitos del proyecto
 ✅ Uso de CBVs
 ✅ Uso de mixin y decorador
@@ -94,14 +97,14 @@ Datos precargados (la app se construye con migraciones)
 ✅ Perfil de usuario editable
 ✅ Mensajería entre usuarios
 ✅ Mensaje "No hay reseñas aún" si está vacío
-
+---
 📹 Demo
 👉 Video de presentación: https://drive.google.com/file/d/17DbkwZQU-Y5QojjllHvXLRTtbM4Ggbyo/view?usp=sharing
-
+---
 🧑‍💻 Autor
 Nombre y apellido: Florencia Marcat
 Curso:Coder House- python flex  Proyecto pagina web con Django
 Contacto: flormarc22@gmail.com
-
+---
 📝 Licencia
 Este proyecto se entrega como parte de una evaluación educativa. Uso académico solamente.
