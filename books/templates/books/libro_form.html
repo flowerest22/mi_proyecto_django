@@ -1,0 +1,12 @@
+{% extends 'books\base.html' %}
+
+{% block content %}
+  <h2>Crear nuevo libro</h2>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.media }}  {# ✅ Necesario para CKEditor5 #}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+  </form>
+{% endblock %}

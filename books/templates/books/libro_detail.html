@@ -1,0 +1,12 @@
+{% extends 'books\base.html' %}
+{% block title %}Detalle de Libro{% endblock %}
+
+{% block content %}
+<h2>{{ object.titulo }}</h2>
+<p><strong>Autor:</strong> {{ object.autor }}</p>
+<p><strong>Reseña:</strong></p>
+<div>
+  {{ object.resena|safe }}
+</div>
+<a href="{% url 'libro-list' %}">← Volver a la lista</a>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'books/base.html' %}
+{% load static %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block content %}
+  <h1>Acerca de mi</h1>
+
+  <img src="{% static 'acerca_de_mi.jpg' %}" alt="Foto Acerca de Mí" class="img-fluid mb-3" style="max-width: 300px; height: auto;" />
+
+  <p>Mi nombre es Florencia Marcat, tengo 27 años y actualmente trabajo como recepcionista en un colegio. Nací en la provincia de Mendoza pero viví la mayor parte de mi vida en Jesús María, Córdoba. Me encanta aprender sobre programacion y analisis de datos. Seguime en linkedIn: www.linkedin.com/in/flor-marcat</p>
+{% endblock %}

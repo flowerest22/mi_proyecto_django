@@ -1,0 +1,12 @@
+{% extends 'books/base.html' %}
+{% load static %}  
+
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+  <h1>Bienvenido a LibroBlog 📚</h1>
+  
+  <img src="{% static 'portada.jpg' %}" alt="Portada" class="img-fluid mb-3" style="max-width: 600px; height: auto;" />
+  
+  <p>Este es un sitio donde podés encontrar y compartir reseñas de libros con usuarios de diferentes países. Te invitamos a crear tu usuario y contraseña en el sitio para recibir todas nuestras novedades.</p>
+{% endblock %}

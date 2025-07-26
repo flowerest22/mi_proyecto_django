@@ -1,0 +1,19 @@
+{% extends 'books\base.html' %}
+{% block title %}Lista de Libros{% endblock %}
+
+{% block content %}
+<h2>Lista de Libros</h2>
+<ul class="list-group">
+    {% for libro in object_list %}
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+        <a href="{% url 'libro-detail' libro.pk %}">{{ libro.titulo }}</a>
+        <div>
+            <a class="btn btn-sm btn-warning" href="{% url 'libro-edit' libro.pk %}">Editar</a>
+            <a class="btn btn-sm btn-danger" href="{% url 'libro-delete' libro.pk %}">Eliminar</a>
+        </div>
+    </li>
+    {% empty %}
+    <li class="list-group-item">No hay libros aún.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
